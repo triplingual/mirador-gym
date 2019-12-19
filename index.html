@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/mirador-combined.min.css">
+    <title>ScholarTech.net :: Mirador Viewer</title>
+    <style type="text/css">
+     #viewer {
+       width: 100%;
+       height: 100%;
+     }
+    </style>
+  </head>
+  <body>
+    <div id="viewer"></div>
+
+    <script src="js/mirador.min.js"></script>
+    <script type="text/javascript">
+	$(function() {
+		Mirador({
+         "id": "viewer",
+         "data": [
+           { "manifestUri": "https://manifests.britishart.yale.edu/manifest/1039" }
+         ],
+       });
+     });
+    </script>
+  </body>
+</html>
